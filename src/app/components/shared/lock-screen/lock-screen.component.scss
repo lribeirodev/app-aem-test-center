@@ -1,0 +1,121 @@
+@import "../../../../assets/styles/global.scss";
+.lock-screen-component{
+
+  background-color: #001D30;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__loading {
+      @media only screen and (max-width: $breakpoint-mobile){
+        & img {
+          width: 90vw;
+        }
+      }
+    }
+
+    &__email-sent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      animation: fadeIn 5s;
+
+      & img {
+        height: 30vh;
+        border-radius: 100%;
+        border: 10px solid #001D30;
+      }
+
+      & h1 {
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__icon {
+      & img {
+        height: 100px;
+      }
+    }
+
+    &__text {
+      font-size: 30px;
+      color: #FFFFFF;
+
+      @media only screen and (max-width: $breakpoint-mobile){
+          width: 90vw;
+          text-align: center;
+      }
+    }
+
+    &__input {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      & input {
+        height: 50px;
+        width: 40vw;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 50px;
+      }
+
+      & input.warning {
+        border: 5px solid red;
+      }
+
+      @media only screen and (max-width: $breakpoint-mobile){
+        & input {
+          width: 90vw;
+        }
+      }
+    }
+
+    &__button {
+      & button {
+        height: 40px;
+        width: 200px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    &__link {
+      margin-top: 10px;
+      & a {
+        cursor: pointer;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    &__already-logged{
+      margin-top: 30px;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+      :hover{
+        color: aqua;
+      }
+    }
+  }
+}

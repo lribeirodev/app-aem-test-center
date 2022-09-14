@@ -1,0 +1,14 @@
+<div class="logged-component">
+  <div class="logged-component__container" *ngIf="!loading">
+    <div class="logged-component__container__header">
+      <h1>SEJA BEM VINDO (A)</h1>
+      <p>Este aplicação foi criado no intuito de ajudar, aqueles que buscam a certificação</p>
+    </div>
+    <div class="logged-component__container__footer">
+      <button (click)="initTest()">INICIAR TESTE</button>
+    </div>
+  </div>
+  <div class="logged-component__container__loading" *ngIf="loading">
+    <img src="../../../../assets/img/loading.gif">
+  </div>
+</div>

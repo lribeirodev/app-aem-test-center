@@ -1,0 +1,47 @@
+<div class="exercise-item-component" [formGroup]="formGroup">
+  <div class="exercise-item-component__container">
+    <div
+      class="exercise-item-component__container__question"
+      [innerHTML]="getId() + item.question | safeHtml">
+    </div>
+    <div
+      class="exercise-item-component__container__alternatives"
+      >
+      <ng-container
+        *ngFor="let alternative of item.alternatives let i = index">
+
+        <div
+            class="exercise-item-component__container__alternatives__alternative"
+            *ngIf="isRadio()"
+            >
+            <input
+              formControlName="alternativeFormControl"
+              type="radio"
+              name="alternativeFormControl"
+              [id]="'question_'+i"
+              [value]="i">
+            <label
+              [for]="'question_'+i"
+              [innerHTML]="alternative | safeHtml">
+            </label>
+          </div>
+
+          <div
+          class="exercise-item-component__container__alternatives__alternative"
+          *ngIf="isCheckbox()"
+          >
+          <input
+            formControlName="alternativeFormControl_{{i}}"
+            type="checkbox"
+            name="'alternativeFormControl_{{i}}"
+            [id]="'question_'+i"
+            [value]="i">
+          <label
+            [for]="'question_'+i"
+            [innerHTML]="alternative | safeHtml">
+          </label>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

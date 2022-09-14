@@ -1,0 +1,63 @@
+.score-component{
+
+  $corner : 10px;
+
+  &__container{
+    display: flex;
+    font-weight: bold;
+    color: white;
+    & * {
+      padding: 10px;
+
+    }
+
+    &.__showFinal {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @keyframes resultFadeIn {
+        from {
+          transform: rotateY(90deg);
+        } to {
+
+        }
+      }
+
+      & .score-component__container__acertos,
+      .score-component__container__erros,
+      .score-component__container__button {
+        animation: resultFadeIn 5s;
+        width: 250px;
+        font-size: 30px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+
+    &__acertos{
+      background-color: green;
+      border-top-left-radius: $corner;
+    }
+    &__erros{
+      background-color: red;
+      margin-left: 1px;
+      border-top-right-radius: $corner;
+    }
+
+    &__button {
+      cursor: pointer;
+    }
+
+    &__results {
+      height: 300px;
+      overflow: scroll;
+      border: 3px solid white;
+      width: 90vw;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<div class="exercise-container-component">
+  <div class="exercise-container-component__container" >
+      <div class="exercise-container-component__container__score">
+        <app-score [showFinalResult]="showFinalResult"></app-score>
+      </div>
+      <app-exercise-item
+        *ngIf="question"
+        [item]="question"
+        (canGoNext)="receiveEventToEnableNextButton($event)"
+        >
+      </app-exercise-item>
+    <div class="exercise-container-component__container__control" *ngIf="!showFinalResult">
+      <!-- <button
+        [disabled]="isPreviousButtonDisabled"
+        (click)="previous()"
+        >
+        PREVIOUS
+      </button> -->
+      <button
+        [disabled]="isNextButtonDisabled"
+        (click)="next()"
+        >
+        NEXT
+      </button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,658 @@
+[
+  {
+    "question":"Which type of configuration can be created in OSGI Configuration Manager?",
+    "alternatives":
+    [
+      "Run modes Configuration",
+      "Components Configuration",
+      "Service Configuration",
+      "Bundles Configuration"],
+    "answer":
+    [
+      0
+    ]
+  },
+  {
+    "question":"Reuse content with several multi-national languages. What is the recommend MSM design for the website?",
+    "alternatives":
+    [
+      [
+      "content",
+      "| we.retail",
+      "  |- language-masters",
+      "   |-en",
+      "|- we.retail",
+      "  |- us",
+      "   |-en",
+      "|- we.retail",
+      "  |- gb",
+      "    |-en",
+      "|- we.retail",
+      "  |- ca",
+      "    |-en",
+      "|- we.retail",
+      "  |- au",
+      "   |-en"
+      ]
+    ],
+    "answer": [0]
+  },
+  {
+    "question":"Which configuration takes precedence at runtime, when multiple configurations",
+    "alternatives":
+    [
+      "Any .config files from <cq-installation-dir>/crx-quickstart/launchpad/config/…",
+      "Repository nodes with type sling:OsgiConfig under /libs/*/config… .",
+      "Repository nodes under /apps/*/config… .",
+      "Configurations that exist in the Web Console."
+    ],
+    "answer": [3]
+  },
+  {
+    "question":"A customer is having trouble with some search queries and provides the following information:<br/>* The logs show the following warning occurs many times: *WARN* Traversed 1000 nodes.<br/>* The client has more than 100.000 pages stored in their AEM instance.<br/>* The client uses a custom page property to help search for pages of a given type.<br/>What should the AEM Developer do to help resolve the client’s issue?",
+    "alternatives":
+    [
+      "Create a custom oak index for the custom page property.",
+      "Use the Index Manager to validate the ‘cqPageLucene’ index is enabled",
+      "Set the reindex flag to true for node ‘oak:index/cqPageLucene’.",
+      "Advice the client to reorganize their content by having nodes of no more than 10,000 subnodes."
+    ],
+    "answer": [0]
+  },
+  {
+    "question":"Which configuration/ section should be used to resolve the domain name by dispatcher:",
+    "alternatives":
+    [
+      "Configuration in DNS",
+      "Configuration in httpd.conf",
+      "Configuration in vhosts file",
+      "Configuration in filters.any"
+    ],
+    "answer": [2]
+  },
+  {
+    "question":"An AEM application wants to set up multi-tenancy using Adobe-recommended b… Which of the following options is recommended?",
+    "alternatives":
+    [
+      [
+        "Import org.apache.felix.scr.annotations.Component;",
+        "@Component(label = “My configuration”, metatype = true, factory= true)"
+      ],
+      [
+        "import org.osgi.service.component.annotations.Component;",
+        "import org.osgi.service.metatype.annotations.Designate;",
+        "@Component(service = ConfigurationFactory.class)",
+        "@Designate(ocd = ConfigurationFactoryImpl.Config.class, factory=true)"
+      ],
+      [
+        "import org.osgi.service.component.annotations.Component;",
+        "@Component(service = ConfigurationFactory.class)"
+      ],
+      [
+        "import org.osgi.service.metatype.annotations.AttributeDefinition;",
+        "import org.osgi.service.metatype.annotations.ObjectClassDefinition;",
+        "@ObjectClassDefinition(name = “My configuration”)"
+      ]
+    ],
+    "answer":
+    [
+      1
+    ]
+    },
+    {
+      "question":"A developer has multiple LDAP Authentication providers. The user is not required to pass the authentication test of the Authentication providers. -If authentication succeeds, control is returned to the caller; no subsequent Authentication provider down the list is executed. - If authentication fails, authentication continues down the list of providers. What should be the JAAS Control flag value in Apache Jackrabbit Oak External Login Module configuration?",
+      "alternatives":
+      [
+        "OPTIONAL",
+        "SUFFICIENT",
+        "MANDATORY",
+        "REQUIRED"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question":"<img style='height: 20vw;' src='./assets/img/question/question_8_part_1.png'><img style='height: 40vw;' src='./assets/img/question/question_8_part_2.png'>",
+      "alternatives":
+      [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+    "answer":
+    [
+      3
+    ]
+    },
+    {
+      "question":"Which URI should be used to configure a Flush Agent for a dispatcher listening on local host port 8080?",
+      "alternatives":
+      [
+        "http://dispatcherHost:8080/dispatcher/invalidate.cache"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"An AEM Developer creates a custom OAK Lucene index for /content/mywebsite under /oak index node. While testing the live site being applied to any query within the website. Default Lucene indexes with high cost are being picked up by the AEM. What is the most likely cause of this issue?",
+      "alternatives":
+      [
+        "The custom OAK Lucene index must include boost property to rank it higher than default Lucene index.",
+        "The custom OAK Lucene index is missing evaluatePathRestrictions property and queryPaths property.",
+        "The custom OAK Lucene index is missing evaluatePathRestrictions property and includedPaths property.",
+        "The custom OAK Lucene index must be replaced with OAK Lucene Property index."
+      ],
+      "answer":[
+        1
+      ]
+    },
+    {
+      "question":"An AEM application requires LDAP Service integration to synchronize users/groups. Which two OSGi configuration are required for LDAP integration in AEM? (Select two)",
+      "alternatives":
+      [
+        "Apache Jackrabbit Oak Default Sync Handler",
+        "Apache Jackrabbit Oak External Login Module",
+        "Apache Jackrabbit Oak CUG Configuration",
+        "Apache Jackrabbit Oak AuthorizableActionProvider",
+        "Apache Jackrabbit Oak Solr server provider"
+      ],
+      "answer":[
+        0,
+        1
+      ]
+    },
+    {
+      "question":"A costumer needs to store approximately 200 raw data items from REST API and display each item as an AEM page. A draft … Which method should be used to meet this requirement?",
+      "alternatives":
+      [
+        "Build a segment using data from REST API call.",
+        "Create pages by binding the data for each item using the draft page template and custom data retrieval logic.",
+        "Create Experience fragments by binding the data for each item using the draft page template and custom data retrieval logic.",
+        "Create Content fragments by binding the data for each item using the draft page template and custom data retrieval logic."
+      ],
+      "answer":
+      [
+        3
+      ]
+    },
+    {
+      "question":"SPA components are connected to AEM components via MapTo() method. Which code should be used to correctly connect an SPA component called ItemList to its AEM equivalent?",
+      "alternatives":
+      [
+        "MapTo(‘project/components/content/itemList’)(ItemList,ItemListEditConfig);"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"A developer needs to make template T available as a child page of page P. The developer has determined that:<br/>Template T matches cq:allowedTemplates property on page P.<br/>Template T has no allowedPath property set.<br/>Template T is not in the same application as page P.<br/>The template of the page P has no match on the allowedParents property of template T.<br/>Template T has no match on the allowedTemplate property on the template of page P.<br/>What should the developer change?",
+      "alternatives":
+      [
+        "Make page P match allowedPaths property of template T.",
+        "Migrate template T to the same application as page P.",
+        "Make the allowedParents property of template T match the template of page P.",
+        "Clear the allowedParents property of template T."
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":" An AEM Developer needs to create a new component to help support a new product launch.<br/>The client is on AEM 6.5 on-premise with the latest version of WCM Core Components<br/>The component must include text, image, and a link<br/>The component must support multiple designs<br/>Which process should the AEM Developer use to support the launch?",
+      "alternatives":
+      [
+        ".Extend the Text Component from Core Components<br/>Enable image manipulations for the Text Component via policy",
+        "Extend the Teaser Component from Core Components<br/>Create style variations to be used in the Style System",
+        "Create a new image with Text component that exposes the Core Components authoring dialogs for the …<br/>.Add a policy to define which designs are used",
+        "Create a new component by extending the Text Component from Core Components<br/>Add dialog properties and modify HTL to support images"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question":"AEM SPA’S PageModelManager leverages the JSON Model Exporter.<br/>Which two meta fields are exposed through that exporter? (Choose two)",
+      "alternatives":
+      [
+        ":type",
+        ":length",
+        ":children",
+        ":parent",
+        ":resource"
+      ],
+      "answer":
+      [
+        0,
+        2
+      ]
+    },
+    {
+      "question":
+      "Question 17 - 1. Copy the cq:dialog from /app/core/wcm/components/page/v2/page to /app/foo/components/page<br/>2. Identify the last entry of the items node<br/>3. Add the custom tab after that node",
+      "alternatives":
+      [
+        "The answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"Question 18 Answer: AEM Development<br/>It should be:<br/>1 Sling Model Exporter for Content Fragments and Experience Fragments<br/>2 AEM Assets HTTP API<br/>3 Content Services<br/>4 The reason is that the other options have:<br/>5 GraphQL API for Content Fragments and Experience Fragments",
+      "alternatives":
+      [
+        "The answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"An AEM application must process a high volume of content ingestion on the author server. What is a key factor to optimize a design for overall performance gain for implementing workflows?",
+      "alternatives":
+      [
+        "Run garbage collection every time content ingestion occurs",
+        "Use Transient workflows",
+        "Allocate more RAM for the content ingestion up front.",
+        "Use Schedulers to run the workflows only on weekends."
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question":"An AEM application must implement user testing using AEM Mocks.<br/>Which two services does the Class AemContext provide developers access to? (Choose two)",
+      "alternatives":
+      [
+        "FlushAgent",
+        "Session",
+        "WorkflowSession",
+        "ModelFactory",
+        "TagManager"
+      ],
+      "answer":
+      [
+        3,
+        4
+      ]
+    },
+    {
+      "question":"A customer adds third-party client libraries to add some features in an existing AEM application, which will …<br/><br/>What is the best option for the AEM Developer to optimize the site?",
+      "alternatives":
+      [
+        "Rebuild Client libraries.",
+        "Debug third-party client lib and fix the code.",
+        "Create new AEM application from Scratch.",
+        "Embed client libraries to consolidate them into fewer files."
+      ],
+      "answer":
+      [
+        3
+      ]
+    },
+    {
+      "question":"Question 22 Answer: AEM Development<br/>It should be:<br/>1. Create Sling models to export as yaml<br/>2. Configure mime type in Apache Sling MIME Type Service",
+      "alternatives":
+      [
+        "The answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"Question 23 Answer: AEM Development<br/>It should be:<br/>4. //Get myVariable from args<br/>String args = metaDataMap.get(“PROCESS_ARGS”, String.class);<br/><br/>It cannot be 1. as the method getPayload() gives you a path and not the variables value <br/><br/>It cannot be 2. as the method does not give you the variable value <br/><br/>It cannot be 3. as the MetaDataMaps get method needs two params <br/>",
+      "alternatives":
+      [
+        "The answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"A project requires sharing information between SPA components.<br/><br/>What is the least complex approach to achieve that objective?",
+      "alternatives":
+      [
+        "Utilize model props to drill down and access or set the state on desired components.",
+        "Centralize the logic and broadcast to the necessary components.",
+        "Implement a state library in order to share component states.",
+        "Customize and extend the container component to leverage the object hierarchy."
+      ],
+      "answer":
+      [
+        3
+      ]
+    },
+    {
+      "question":"An AEM Developer needs to automate tests for the user interface.<br/>Which tool is provided in the AEM framework for automated UI testing?",
+      "alternatives":
+      [
+        "HobbesJS"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"AEM Development ",
+      "alternatives":
+      [
+        "Applying read permissions to anonymous user for /conf directory"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"An AEM application is required to create absolute urls for the web domain on which the application is supposed to run. The … urls in the server to facilitate other use cases for SEO and Analytics.<br/><br/>Which of the following options would work for the developer?",
+      "alternatives":
+      [
+        "Configure Day CQ Link Externalizer to add a domain mapping to Publisher/Web Server.",
+        "Configure apache rewrite rules to create the absolute urls.",
+        "Configure Day CQ Link Externalizer to remove the author domain.",
+        "Configure Day CQ Link Externalizer to add a domain mapping to Author Server and Publish the page."
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"An AEM application development team is assigned a task to create an Event-Driven Data Layer implementation for an Analytics solution.<br/>Which Adobe recommended best practice should the developer choose?",
+      "alternatives":
+      [
+        "Use Adobe Client Fata Layer and integrate with Core components.",
+        "Create an Adobe Cloud Service configuration to use third-party tool’s data layer.",
+        "Create a custom data layer and add each component, template, and its properties to the data",
+        "layer.<br/>Use Adobe Experience Platform’s data layer to integrate with AEM."
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"AEM Development  <br/><br/><img style='height: 20vw;' src='./assets/img/question/question_32.png'>",
+      "alternatives":
+      [
+        "the answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question": "An AEM server is overloaded with too many concurrently running workflows.<br/>The developer decides to reduce …<br/>What should be configured to reduce the number of concurrent workflows?",
+      "alternatives":
+      [
+        "The number of threads in Scheduler",
+        "Maximum Parallel Jobs in OSGi console",
+        "Launchers for each workflow",
+        "The number of threads in Apache Felix Jetty Http Service"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question":"AEM Development  <br/><br/><img style='height: 20vw;' src='./assets/img/question/question_34.png'>",
+      "alternatives":
+      [
+        "the answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"AEM Development  <br/><br/><img style='height: 20vw;' src='./assets/img/question/question_35.png'>",
+      "alternatives":
+      [
+        "the answer is on the question, just read it"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question": "Where should an AEM Developer add a front-end dependency? ",
+      "alternatives":
+      [
+        "setting.xml",
+        "package.json",
+        "vault.xml",
+        "config.json"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question": "A custom AEM application contains Bundle A and Bundle B. Bundle A has a dependency to Bundle B via Import-Package.<br/>How can both bundles be deployed most efficiently across all environments?",
+      "alternatives":
+      [
+        "Embed both bundles in one content package and use property 'installationOrder' in package properties for correct bundle installation order",
+        "Embed both bundles in one content package: the dependency via Import-Package is enough to ensure correct installation",
+        "Use the Felix Web Console to upload the bundles in the correct order",
+        "Create one content package per bundle and use a package dependency to ensure installation order"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question": "Per the latest AEM archetype, what are two primary purpose of the it.launcher module? (Choose two)",
+      "alternatives":
+      [
+        "Hold all mock data used for JUnit testing.",
+        "Bundle up the code that deploys ui.tests to the server.",
+        "Bundle all Hobbes tests for automating UI tests.",
+        "Package up JUnit tests that will later be executed server-side.",
+        "Trigger remote JUnit execution."
+      ],
+      "answer":
+      [
+        1,
+        4
+      ]
+    },
+    {
+      "question":"Which tool allows assets to be shared with multiple AEM instances as read-only local assets?",
+      "alternatives":
+      [
+        "Package Manager",
+        "Connected Assets",
+        "Asset Link Share",
+        "Felix Console"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question":"What is the default value for AC Handling when creating packages?",
+      "alternatives":
+      [
+        "Ignore",
+        "MergePreserve",
+        "Merge",
+        "Overwrite  "
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"AEM Development  <br/><br/><img style='height: 20vw;' src='./assets/img/question/question_41.png'>",
+      "alternatives":
+      [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer":
+      [
+        3
+      ]
+    },
+    {
+      "question":"What is Out of Scope for the Pattern Detector tool, while doing an AEM upgrade?'>",
+      "alternatives":
+      [
+        "Definitions of OAK indices for compatibility",
+        "Backward Compatibility with the previous AEM Version",
+        "OSGi bundles exports and imports mismatch",
+        "rep:User nodes compatibility (in context of OAuth configuration)"
+      ],
+      "answer":
+      [
+        1
+      ]
+    },
+    {
+      "question":"While working with Editable Templates, the author reports that the changes that the author makes are lost periodically.<br/><br/>What should the AEM Developer fix to prevent losing author updates?",
+      "alternatives":
+      [
+        "Set mode to be “merge” in the filter.xml",
+        "Set mode to be “update” in the filter.xml",
+        "Move the affected Editable template to /apps/templates",
+        "Move the affected Editable template to /etc/templates"
+      ],
+      "answer":
+      [
+        0
+      ]
+    },
+    {
+      "question":"AMS recommends a team to upgrade AEM servers with in-place Upgrade because the existing version has reached EOL.<br/><br/>What are two disadvantages of performing an In-place Upgrade to the latest version of AEM (chose two)",
+      "alternatives":
+      [
+        "Content revision history is not preserved",
+        "Depending on the version difference the old and new instances, the upgrade can be a long and arduous",
+        "Content Migration is required",
+        "Complex developer setup and automation of the upgrade process.",
+        "ACLs, users, and groups are lost"
+      ],
+      "answer":
+      [
+        0,
+        1
+      ]
+    }
+    ,
+    {
+      "question":"Which option should be used to synchronize user data across publish servers in a publish farm?",
+      "alternatives":
+      [
+        "Using Vault plugin",
+        "Replication Agents",
+        "Using Sling Distribution",
+        "Using CURL"
+      ],
+      "answer":
+      [
+        2
+      ]
+    }
+    ,
+    {
+      "question":"The OSGi configuration is added to a runmode specific configuration “confing.author.staging” in AEM as  Cloud Service. The application fails to react the configuration.<br/><br/>What is a possible cause of this issue?",
+      "alternatives":
+      [
+        "Only <service> specific OSGi configuration runmodes like “config.author” or “config.publish” are supported in AEM as a Cloud Service.",
+        "AEM as a Cloud service does not support OSGi configuration runmodes.",
+        "OSGi configuration runmodes cannot be installed automatically on AEM as a Cloud Service. We need to install them as a package using the Package Manager.",
+        "The custom OSGi configuration runmode used (i.e., “config.author.staging”) is not supported in AEM as a Cloud Service."
+      ],
+      "answer":
+      [
+        0
+      ]
+    }
+    ,
+    {
+      "question":"While doing an In-Place AEM upgrade, the developer observes an issue in the server logs where all are active except for the … incompatible due to old version.<br/><br/>What should the developer do to resolve this issue?",
+      "alternatives":
+      [
+        "Install the new jar using the package manager on the old environment.",
+        "Ask for Admin credentials & install the new bundle in Felix console.",
+        "Drop the new package under path crx-quickstart/install and restart.",
+        "Update the plugin in pom.xml"
+      ],
+      "answer":
+      [
+        2
+      ]
+    }
+    ,
+    {
+      "question":"An AEM application must be highly available and scalable in distributed geographic scenario.<br/><br/>Which approach should be used to meet the requiremets?",
+      "alternatives":
+      [
+        "Oak Cluster with MongoMK Failover in a Single Datacenter",
+        "TarMK Cold Standby",
+        "Oak Cluster with MongoMK Failover Multiples Datacenters",
+        "TarMK Farm"
+      ],
+      "answer":
+      [
+        2
+      ]
+    }
+    ,
+    {
+      "question":"An AEM Developer needs to create a log file for the project.<br/>Which next step should the developer take?",
+      "alternatives":
+      [
+        "Create a log file under /var/system/configuration… specific runmode folder(s)",
+        "Create a log file under /apps/myproject/configuration… specific runmode folder(s)",
+        "Ask AMS/DevOps for admin access to create a log file via console.",
+        "Create a log file under /apps/system/configuration… specific runmode folder(s)"
+      ],
+      "answer":
+      [
+        1
+      ]
+    }
+    ,
+    {
+      "question":"An AEM application requires a service user WRITE access to children nodes but not on the parent node itself.<br/><br/>Which console should the developer use to apply appropriate ACL?",
+      "alternatives":
+      [
+        "OAuth Clients console",
+        "User Management console",
+        "Group Management console",
+        "Permissions console"
+      ],
+      "answer":
+      [
+        1
+      ]
+    }
+]

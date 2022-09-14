@@ -1,0 +1,44 @@
+
+.exercise-item-component{
+  &__container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90vw;
+
+    &__question{
+      font-size: 20px;
+      line-height: 1.2em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 10px;
+    }
+
+    &__alternatives{
+      display: flex;
+      flex-direction: column;
+
+      &__alternative {
+        background-color: #dddddd;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 10px;
+        font-size: 20px;
+        display: flex;
+        padding: 2px;
+        & input {
+          margin-left: 5px;
+        }
+        & label {
+          margin-left: 10px;
+          word-break: break-word;
+        }
+
+        & * {
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  }
+}

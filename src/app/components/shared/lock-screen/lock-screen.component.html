@@ -1,0 +1,36 @@
+<div class="lock-screen-component">
+  <div
+    class="lock-screen-component__container"
+    *ngIf="isSignUpStep()"
+    [formGroup]="formGroup"
+  >
+    <div class="lock-screen-component__container__icon">
+      <img src="./assets/img/lock.png">
+    </div>
+    <div class="lock-screen-component__container__text">
+     {{messageHeader}}
+    </div>
+    <div class="lock-screen-component__container__input">
+      <input
+        type="email"
+        formControlName="email"
+        [ngClass]="warning ? 'warning' : ''"
+        [placeholder]="warning ? messageWarningPlaceHolder : ''"
+        (click)="clickEventInputEmail()"
+      />
+    </div>
+    <div class="lock-screen-component__container__button">
+      <button (click)="signUpWithEmail()">Receber Acesso</button>
+    </div>
+    <div class="lock-screen-component__container__already-logged" *ngIf="isAlreadyLogged()">
+      <a (click)="alreadyLogged()">Clique aqui se você já<br>acessou o link do email</a>
+    </div>
+  </div>
+  <div class="lock-screen-component__container__loading" *ngIf="isLoadingStep()">
+    <img src="./assets/img/loading.gif">
+  </div>
+  <div class="lock-screen-component__container__email-sent" *ngIf="isEmailSentStep()">
+    <img src="./assets/img/email-sent.gif" />
+    <h1>Acesso enviado, cheque seu e-mail</h1>
+  </div>
+</div>
